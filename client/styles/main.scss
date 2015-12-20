@@ -557,18 +557,25 @@ p {
 .dashboard-content {
 
 	.stats {
-		display: flex;
-		height: 200px;
 		padding: $padding/2;
 
 		.stat {
 			background: $body-color-off;
-			flex: 1;
 			text-align: center;
 			height: 100%;
 			position: relative;
-			margin: $padding/2;
-			line-height: 3em;
+			border: $padding/2 solid $body-color;
+			line-height: 1em;
+			width: 20%;
+			display: inline-block;
+			font-size: 3em;
+			min-height: 200px;
+
+			@include media-phone {
+				width: 33.333%;
+				font-size: 2em;
+				min-height: 100px;
+			}
 
 			.inner {
 				position: absolute;
@@ -578,16 +585,21 @@ p {
 			}
 
 			.icon {
-				font-size: 3em;
+				@include media-phone {
+					display: none;
+				}
 			}
 
 			.value {
-				font-size: 3em;
 				font-weight: bold;
 
 				.unit {
 					font-size: .3em;
 				}
+			}
+
+			.subtitle {
+				font-size: .3em;
 			}
 		}
 
