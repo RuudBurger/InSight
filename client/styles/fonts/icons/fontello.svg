@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="chart" unicode="&#xe800;" d="m1143-7v-72h-1143v858h71v-786h1072z m-72 696v-242q0-12-10-17t-20 4l-68 68-353-353q-6-6-13-6t-13 6l-130 130-232-233-107 108 326 326q6 6 13 6t13-6l130-130 259 259-67 67q-9 9-5 20t17 11h243q7 0 12-5t5-13z" horiz-adv-x="1142.9" />
+<glyph glyph-name="dashboard" unicode="&#xe801;" d="m214 207q0 30-21 51t-50 21-51-21-21-51 21-50 51-21 50 21 21 50z m107 250q0 30-20 51t-51 21-50-21-21-51 21-50 50-21 51 21 20 50z m239-268l57 213q3 14-5 27t-21 16-27-3-17-22l-56-213q-33-3-60-25t-35-55q-11-43 11-81t66-50 81 11 50 66q9 33-4 65t-40 51z m369 18q0 30-21 51t-51 21-50-21-21-51 21-50 50-21 51 21 21 50z m-358 357q0 30-20 51t-51 21-50-21-21-51 21-50 50-21 51 21 20 50z m250-107q0 30-20 51t-51 21-50-21-21-51 21-50 50-21 51 21 20 50z m179-250q0-145-79-269-10-17-30-17h-782q-20 0-30 17-79 123-79 269 0 102 40 194t106 160 160 107 194 39 194-39 160-107 106-160 40-194z" horiz-adv-x="1000" />
+<glyph glyph-name="gas" unicode="&#xe802;" d="m7 238q10 41 50 131t44 146q39-72 45-145 148 184 154 428 10-6 25-17t58-45 74-74 61-96 34-118q15 36 19 78t-9 81q15-12 41-40t56-74 56-99 31-118-9-127-72-127-152-120q64 128 25 278t-154 229q10-43-11-141t-65-150q7 63 4 102t-12 58l-10 18q-12-70-60-141-26-37-39-68t-9-80 30-105q-135 76-181 154t-24 181z" horiz-adv-x="748" />
+<glyph glyph-name="electricity" unicode="&#xe806;" d="m0 345l387 467q3 4 9 4t9-3q6-5 4-13l-104-343 259-104-385-465q-3-4-9-5t-9 3q-7 6-4 13l104 344z" horiz-adv-x="564" />
+</font>
+</defs>
+</svg>

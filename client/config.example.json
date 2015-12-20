@@ -1,0 +1,10 @@
+{
+	"development":{
+		"debug": true,
+		"api": "/dummy_data"
+	},
+	"production":{
+		"debug": false,
+		"api": "/api"
+	}
+}
