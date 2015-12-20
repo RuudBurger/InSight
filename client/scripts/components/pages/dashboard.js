@@ -21,7 +21,7 @@ export default React.createClass({
 	],
 
 	refresh(){
-		//this.setState({});
+		this.setState({});
 	},
 
 	render(){
