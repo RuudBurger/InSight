@@ -31,7 +31,7 @@ export default React.createClass({
 
 	getInitialState(){
 		return {
-			date_start: moment().subtract(31, 'days'),
+			date_start: moment().subtract(1, 'days'),
 			date_end: moment()
 		}
 	},

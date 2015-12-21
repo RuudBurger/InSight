@@ -50,18 +50,22 @@ export default React.createClass({
 			current = null,
 			tmp = {data:[]};
 
+		var push = (tmp) => {
+			tmp.name = current == 0 ? 'Low' : 'High';
+			tmp.color = current == 0 ? '#666' : '#aa6666';
+			series.push(tmp);
+		}
+
 		this.state.last_day.forEach(item => {
 
 			tmp.data.push([item.timestamp * 1000, item.usage]);
 
 			if(item.current != current){
 				if(tmp.data.length > 1){
-					series.push(tmp);
+					push(tmp);
 				}
 
 				tmp = {
-					name: current == 1 ? 'Low' : 'High',
-					color: current == 1 ? '#666' : '#aa6666',
 					data:[[item.timestamp * 1000, item.usage]]
 				};
 				current = item.current;
@@ -69,7 +73,7 @@ export default React.createClass({
 
 		});
 
-		series.push(tmp);
+		push(tmp);
 
 
 		var config = {
