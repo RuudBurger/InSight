@@ -53,6 +53,10 @@ export default React.createClass({
 		$('.filter .shortcuts').off('click');
 	},
 
+	handleChange(){
+
+	},
+
 	render(){
 		var latest = LatestStore.get(),
 			minutes = parseInt(moment.duration(this.state.date_end.diff(this.state.date_start)).asMinutes());

@@ -34,8 +34,18 @@ export default React.createClass({
 		RangeActions.getRange(this.props.range, this.props.interval, null, this.updateDayData);
 	},
 
-	render(){
+	componentWillUpdate(nextProps){
+		if(this.props.range != nextProps.range || this.props.interval != nextProps.interval){
+			RangeActions.getRange(nextProps.range, nextProps.interval, null, this.updateDayData);
+		}
+	},
 
+	// Don't update once generated
+	shouldComponentUpdate(nextProps){
+		return this.state.last_day.length == 0 || this.props.range != nextProps.range || this.props.interval != nextProps.interval;
+	},
+
+	render(){
 		var series = [],
 			current = null,
 			tmp = {data:[]};
