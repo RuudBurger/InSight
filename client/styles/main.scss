@@ -1,6 +1,8 @@
 @import "fonts";
 @import "mixins";
 
+@import "../../node_modules/react-datepicker/dist/react-datepicker";
+
 *,
 *:before,
 *:after {
@@ -496,13 +498,6 @@ p {
 			font-size: 1.25em;
 		}
 	}
-
-	.padded {
-		padding: $padded/2 $padded;
-
-		&:first-child { padding-top: $padded; }
-		&:last-child { padding-bottom: $padded; }
-	}
 }
 
 /** Navigation **/
@@ -555,6 +550,20 @@ p {
 
 /** Dashboard **/
 .dashboard-content {
+
+	.filter {
+		display: flex;
+		background: $body-color-off;
+		padding: $padding;
+
+		.shortcuts {
+			flex: 1;
+		}
+
+		.date > div {
+			display: inline-block;
+		}
+	}
 
 	.stats {
 		padding: $padding/2;
